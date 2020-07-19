@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 35%;
+    background-color: #33CC33;
+    padding: 10px;
+}
+
+.name {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+}
+
+.name a, h1 {
+    position: relative;
+    top: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 0px 0px 0px 100px;
+}
+
+.name a {
+    font-size: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    padding: 0px 55px 0px 0px;
+}
+
+.fa {
+    position: relative;
+    top: -35px;
+    padding: 10px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0px 1px 4px 1px grey;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-linkedin, .fa-instagram, .fa-skype, .fa-android, .fa-tumblr {
+    background: #33CC33;
+    color: white;
+}
+
