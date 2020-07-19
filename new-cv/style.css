@@ -60,3 +60,47 @@
     color: white;
 }
 
+.infoBar {
+    display: flex;
+    flex-wrap: nowrap;
+    left: 50%;
+    transform: translate(-50%,-27%);
+    position: relative;
+    width: 800px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.avatar {
+    background-image: url(img/ava.jpg);
+    background-size: cover;
+    display: flex;
+    flex: 0.3;
+    border: 1px solid black;
+}
+
+.infoName {
+    display: flex;
+    align-content: flex-start;
+    flex-flow: column wrap;
+    align-self: flex-start;
+    position: absolute;
+    width: 70%;
+    height: 200px;
+    border: 1px solid black;
+    left: 30%;
+}
+
+.infoName h1 {
+    color: black;
+    top: 0px;
+    padding: 0px;
+}
+
+.infoSocial {
+    border: 1px solid black;
+    display: flex;
+    align-self: flex-end;
+    position: absolute;
+    background-color: black;
+}
