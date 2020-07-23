@@ -13,13 +13,13 @@
     padding: 10px;
 }
 
-.name {
+.headerName {
     display: flex;
     flex-flow: column wrap;
     flex: 1;
 }
 
-.name a, h1 {
+.headerName a, h1 {
     position: relative;
     top: 50px;
     color: white;
@@ -28,7 +28,7 @@
     padding: 0px 0px 0px 100px;
 }
 
-.name a {
+.headerName a {
     font-size: 20px;
 }
 
@@ -61,57 +61,31 @@
 }
 
 .infoBar {
+    border: 1px solid black;
+    width: 700px;
+    height: 250px;
     display: flex;
     flex-wrap: nowrap;
-    left: 50%;
-    transform: translate(-50%,-27%);
-    position: relative;
-    width: 800px;
-    height: 250px;
-    border: 1px solid black;
-    background-color: white;
+    position: absolute;
+    
 }
 
 .avatar {
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
     background-image: url(img/ava.jpg);
     background-size: cover;
-    display: flex;
-    flex: 0.6;
-    border: 1px solid black;
 }
 
 .infoName {
-    display: flex;
-    flex-flow: column wrap;
-} 
-
-.name1 {
-    color: black;
-    font-size: 20px;
-    text-align: left;
-    border-bottom: 1px solid black;
-    position: relative;
-    left: 20px;
-    padding-top: 10px;
-}
-
-.name1 h1 {
-    top: 0px;
-    padding: 0;
-    color: black;
-}
-
-table {
-    position: relative;
-    padding: 20px 0px 0px 20px;
-    font-size: 20px;
-}
-
-table th {
-    text-align: left;
-}
-
-.inforSocial {
     border: 1px solid black;
 }
 
+.infoSocial {
+    border: 1px solid black;
+    width: 450px;
+    height: 50px;
+    display: flex;
+    align-self: flex-end;
+}
