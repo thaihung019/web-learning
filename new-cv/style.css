@@ -40,7 +40,7 @@
     padding: 0px 55px 0px 0px;
 }
 
-.fa {
+.social .fa {
     position: relative;
     top: -35px;
     padding: 10px;
@@ -51,11 +51,11 @@
     box-shadow: 0px 1px 4px 1px grey;
 }
 
-.fa:hover {
+.social .fa:hover {
     opacity: 0.7;
 }
 
-.fa-facebook, .fa-twitter, .fa-youtube, .fa-linkedin, .fa-instagram, .fa-skype, .fa-android, .fa-tumblr {
+.social .fa-facebook, .social .fa-twitter, .social .fa-youtube, .social .fa-linkedin, .social .fa-instagram, .social .fa-skype, .social .fa-android, .social .fa-tumblr {
     background: #11b57c;
     color: white;
 }
@@ -120,4 +120,9 @@
     left: 251px; 
     background-color: #11b57c;
     position: absolute;
+}
+
+.iconSocial .fa {
+    text-decoration: none;
+    color: white;
 }
