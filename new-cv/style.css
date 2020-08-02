@@ -15,20 +15,17 @@ body {
     display: flex;
     flex-wrap: nowrap;
     color: white;
-    height: 250px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0 100px;
 }
 
 .headerName {
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    padding-left: 50px;
 }
 
 .social {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(10%,-300px);
+    padding-right: 50px;    
 }
 
 .social .fa {
@@ -48,32 +45,32 @@ body {
     opacity: 0.7;
 }
 
-.infoBar {
-    display: flex;
-    height: 250px;
-    width: 600px;
-    background-color: white;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%,-10%);
-    border: 1px solid black;
+.container {
+    margin-top: -70px;
 }
 
+.infoBar {
+    display: flex;
+    justify-content: center;
+    
+}
 .avatar {
-    position: relative;
-    background-image: url(img/ava.jpg);
-    background-size: cover;
-    width: 250px;
+    max-width: 250px;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.infoName {
+    background-color: white;
 }
 
 .name {
-    width: 300px;
-    position: absolute;
-    left: 270px;
-    top: 10px;
-    border-bottom: 2px solid grey;
+    padding-top: 20px;
     padding-bottom: 10px;
+    border-bottom: 2px solid grey;
+    margin: 0 20px;
 }
 
 .h1 {
@@ -92,9 +89,7 @@ body {
 }
 
 .tableInfo {
-    position: fixed;
-    left: 270px;
-    top: 70px;
+    padding: 10px 0 0 20px;
 }
 
 .tableInfo th {
@@ -107,14 +102,12 @@ body {
 }
 
 .infoSocial {
-    display: flex;
-    align-self: flex-end;
     background-color: #11b57c;
-    width: 350px;
-    height: 50px;
+    padding-top: 3px;
 }
 
 .infoSocial .fa {
+    position: relative;
     font-size: 20px;
     color: white;
     text-decoration: none;
@@ -124,27 +117,65 @@ body {
 }
 
 .infoSocial .fa:hover {
+    animation: bounce 500ms linear infinite;
+}
+.infoSocial .fa.heart:hover {
+    animation: heartBeat 500ms linear infinite;
+}
+
+.infoSocial .fa:hover {
     opacity: 0.7;
 }
 
 .body {
     display: flex;
     flex-direction: column;
+    width: 600px;
+    height: 800px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    top: 146px;
 }
 
 .skill {
     position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%;-50%);
+    text-align: center;
+    font-weight: bold;
+    color: #11b57c;
+    top: 20px;
 }
 
 .content {
     background-color: white;
     width: 600px;
-    height: 250px;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,240px);
+    
 }
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -10px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(0.8);
+    }
+    60% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
