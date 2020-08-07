@@ -1,6 +1,11 @@
+<<<<<<< HEAD
 ### create animate CSS
 
 ## create keyframe
+=======
+#create keyframe
+
+>>>>>>> ef9625b25d9947011b36c27922a9d710d8e39aac
 ```
 @keyframes bounce {
     0% {
@@ -30,7 +35,11 @@
 }
 ```
 
+<<<<<<< HEAD
 ## create animate
+=======
+#create animate
+>>>>>>> ef9625b25d9947011b36c27922a9d710d8e39aac
 ```
 .infoSocial .fa:hover {
     animation: bounce 500ms linear infinite;
