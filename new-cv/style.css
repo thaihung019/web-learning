@@ -144,15 +144,12 @@ body {
     margin-top: 20px;
 }
 
-<<<<<<< HEAD
 .article {
     display: flex;
     flex-flow: column wrap;
     flex-grow: 1;
     padding: 10px 0 10px 10px;
 }
-=======
->>>>>>> ef9625b25d9947011b36c27922a9d710d8e39aac
 
 .chart {
 
