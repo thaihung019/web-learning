@@ -147,13 +147,14 @@ body {
 .article {
     display: flex;
     flex-flow: column wrap;
-    padding: 10px 0 10px 10px;
-    max-width: 340px;
+    padding: 10px 0 10px 50px;
+    width: 340px;
 }
 
 .chart {
     display: flex;
     flex-flow: column wrap;
+    padding-left: 20px;
 }
 
 .percent {
@@ -163,15 +164,30 @@ body {
 
 .chartOne {
     display: flex;
-    flex-flow: column wrap;
+    flex-wrap: nowrap;
 }
 
-.green {
-    background-color: #11b57c;
-    display: inline-table;
-    height: 10px;
+.chartOne .green {
     width: 90%;
-    left: 0%;
-    background-repeat: repeat-x;
-    position: absolute;
+    border: 2px solid #11b57c;
+}
+
+.chartOne .grey {
+    width: 10%;
+    border: 2px solid grey;
+}
+
+.chartTwo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.chartTwo .green {
+    width: 85%;
+    border: 2px solid #11b57c;
+}
+
+.chartTwo .grey {
+    width: 15%;
+    border: 2px solid grey;
 }
