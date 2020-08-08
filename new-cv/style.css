@@ -147,8 +147,10 @@ body {
 .article {
     display: flex;
     flex-flow: column wrap;
-    padding: 10px 0 10px 50px;
+    justify-content: center;
     width: 340px;
+    max-width: 340px;
+    height: 250px;
 }
 
 .chart {
@@ -162,32 +164,19 @@ body {
     margin-left: 130px;
 }
 
-.chartOne {
+.chart {
+    width: 340px;
+}
+
+.chartFull {
+    border: 2px solid grey;
+    position: absolute;
+    width: 340px;
+    z-index: -1;
+}
+
+.chartGreen {
     display: flex;
     flex-wrap: nowrap;
-}
-
-.chartOne .green {
-    width: 90%;
     border: 2px solid #11b57c;
-}
-
-.chartOne .grey {
-    width: 10%;
-    border: 2px solid grey;
-}
-
-.chartTwo {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.chartTwo .green {
-    width: 85%;
-    border: 2px solid #11b57c;
-}
-
-.chartTwo .grey {
-    width: 15%;
-    border: 2px solid grey;
 }
