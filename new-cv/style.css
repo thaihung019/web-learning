@@ -103,7 +103,7 @@ body {
 
 .infoSocial {
     background-color: #11b57c;
-    padding-top: 3px;
+    padding-top: 2px;
 }
 
 .infoSocial .fa {
@@ -147,10 +147,31 @@ body {
 .article {
     display: flex;
     flex-flow: column wrap;
-    flex-grow: 1;
     padding: 10px 0 10px 10px;
+    max-width: 340px;
 }
 
 .chart {
+    display: flex;
+    flex-flow: column wrap;
+}
 
+.percent {
+    text-align: right;
+    margin-left: 130px;
+}
+
+.chartOne {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.green {
+    background-color: #11b57c;
+    display: inline-table;
+    height: 10px;
+    width: 90%;
+    left: 0%;
+    background-repeat: repeat-x;
+    position: absolute;
 }
