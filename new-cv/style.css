@@ -9,6 +9,13 @@ body {
     background-color: #e7e7e7;
 }
 
+.screen-view {
+    width: 100%;
+    min-width: 700px;
+    max-width: 1000px;
+    margin: auto;
+}
+
 .header {
     background-color: #11b57c;
     font-family: 'Krona One', sans-serif;
@@ -43,6 +50,8 @@ body {
 
 .social .fa:hover {
     opacity: 0.7;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -51,8 +60,6 @@ body {
 
 .infoBar {
     display: flex;
-    justify-content: center;
-    
 }
 .avatar {
     max-width: 250px;
@@ -64,6 +71,7 @@ body {
 
 .infoName {
     background-color: white;
+    width: 100%;
 }
 
 .name {
@@ -137,46 +145,34 @@ body {
 
 .content {
     background-color: white;
-    width: 680px;
-    height: 250px;
     display: flex;
     align-items: center;
     margin-top: 20px;
+    width: 100%;
 }
 
 .article {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    width: 340px;
-    max-width: 340px;
-    height: 250px;
+    width: 50%;
+    padding: 20px;
 }
 
 .chart {
     display: flex;
     flex-flow: column wrap;
-    padding-left: 20px;
+    width: 50%;
+    padding: 20px;
 }
 
-.percent {
-    text-align: right;
-    margin-left: 130px;
-}
-
-.chart {
-    width: 340px;
-}
-
-.chartFull {
-    border: 2px solid grey;
-    position: absolute;
-    width: 340px;
-    z-index: -1;
+.chartWidth {
+    width: 100%;
+    background: grey;
+    height: 2px;
 }
 
 .chartGreen {
-    display: flex;
-    flex-wrap: nowrap;
-    border: 2px solid #11b57c;
+    background: #11b57c;
+    height: 2px;
 }
