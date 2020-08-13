@@ -134,7 +134,7 @@ body {
     align-items: center;
 }
 
-.titleSkill {
+.titleName {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -198,4 +198,14 @@ body {
 .chartGreen {
     background: #11b57c;
     height: 2px;
+}
+
+.education {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.timeline {
+    margin-top: 20px;
 }
