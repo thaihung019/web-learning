@@ -157,6 +157,29 @@ body {
     justify-content: center;
     width: 50%;
     padding: 20px;
+    text-align: justify;
+}
+
+.article a {
+    text-indent: 20px;
+}
+
+.chart {
+    padding-top: 10px;
+}
+
+.text {
+    display: flex;
+    width: 100%;
+}
+
+.text a {
+    width: 50%;
+}
+
+.percent {
+    width: 50%;
+    text-align: right;
 }
 
 .chart {
